@@ -46,15 +46,5 @@ public class BasicUI : MonoBehaviour
             posX += width + buffer;
         }
 
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    }   
 }

@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour, IGameManager
    public string equippedItem { get; private set; }
     public bool EquipItem(string name)
     {
-    if(_items.ContainsKey(name)&&equippedItem != name){
+    if (_items.ContainsKey(name)&&equippedItem != name){
             equippedItem = name;
             Debug.Log("Equipped " + name);
             return true;
@@ -23,8 +23,7 @@ public class InventoryManager : MonoBehaviour, IGameManager
         if (_items.ContainsKey(name))
         {
             _items[name]--;
-            if (_items[name] == 0)
-            {
+            if (_items[name] == 0){
                 _items.Remove(name);
             }
         }
