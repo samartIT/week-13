@@ -5,8 +5,12 @@ using UnityEngine;
 public class DeviceTrigger : MonoBehaviour {
     [SerializeField] private GameObject[] targets;
 
-    void OnTriggerEnter(Collider other)
+    public bool requireKey;
+    private void OnTriggerEnter(Collider other)
     {
+        if (requireKey && Managers.Inventory.equippedItem != "key")
+            return;
+
         foreach(GameObject target in targets)
         {
             target.SendMessage("Activate");
