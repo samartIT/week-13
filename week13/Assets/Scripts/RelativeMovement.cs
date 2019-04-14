@@ -53,7 +53,7 @@ public class RelativeMovement : MonoBehaviour
         _animator.SetFloat("Speed", movement.sqrMagnitude);
 
         // Jump begin
-        print(_charCtrl.isGrounded);
+        //print(_charCtrl.isGrounded);
         if (_charCtrl.isGrounded) // check if player on ground
         {
             if (Input.GetButtonDown("Jump")) {         
