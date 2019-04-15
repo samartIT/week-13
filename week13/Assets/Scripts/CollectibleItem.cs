@@ -9,6 +9,6 @@ public class CollectibleItem : MonoBehaviour
     {
         //Debug.Log("item collected = " + itemName);
         Managers.Inventory.AddItem(itemName);
-        //Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }
