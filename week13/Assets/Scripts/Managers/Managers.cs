@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerManager))]
+[RequireComponent(typeof(InventoryManager))]
+
 public class Managers : MonoBehaviour
 {
     public static PlayerManager Player { get; private set; }
