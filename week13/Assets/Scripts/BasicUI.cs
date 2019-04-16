@@ -18,9 +18,9 @@ public class BasicUI : MonoBehaviour
         foreach (string item in itemList)
         {
             int count = Manager.Inventory.GetItemCount(item);
-            Texture2D image = Resources.Load<Texture2D>("Icon/" + item);
+            Texture2D image = Resources.Load<Texture2D>("Icons/" + item);
             GUI.Box(new Rect(posX, posY, width, height), 
-                new GUIContent("(", + count + ")", image));
+                new GUIContent("(" + count + ")", image));
             posX += width + buffer;
         }
 
