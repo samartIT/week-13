@@ -29,7 +29,7 @@ public class BasicUI : MonoBehaviour
         if (equipped != null)
         {
             posX = Screen.width - (width + buffer);
-            Texture2D image = Resources.Load<Texture2D>("Icon/" + equipped);
+            Texture2D image = Resources.Load<Texture2D>("Icons/" + equipped);
             GUI.Box(new Rect(posX, posY, width, height),
                 new GUIContent("Equipped", image));
         }
